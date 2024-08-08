@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Bai test HTML CSS</title>
+</head>
+<body>
+    <div class="menu__header">
+        <div class="header__left">
+            <h4 class="btn btn__lesson">Bài học</h4>
+            <h4 class="btn btn__board">Bảng kết quả <i class="fa-sharp fa-solid fa-circle"></i></h4>
+
+        </div>
+
+        <div class="header__right">
+            <div class="date-container">
+                <label for="due-date">Hạn cuối</label>
+                <input type="text" id="due-date" value="08/08/2024 12:00" readonly>
+                <i class="fa-regular fa-calendar"></i>
+                <div class="calendar-icon"></div>
+            </div>
+
+            <button class="btn btn__delete">Xóa bài học</button>
+            <button class="btn btn__create">Thêm nội dung <i class="fa-solid fa-chevron-down"></i></button>
+            <button class="btn btn__deliver">Giao bài tập</button>
+        </div>
+
+    </div>
+
+    <ul class="table">
+        <li class="table-header">
+            <div class="table-cell">
+                <input type="checkbox" class="table-cell1">
+            </div>
+            <div class="table-cell bold">Mã số</div>
+            <div class="table-cell bold">Tiêu đề</div>
+            <div class="table-cell bold">Loại</div>
+            <div class="table-cell bold">Ngày tạo</div>
+            <div class="table-cell bold boder-solid">Quản lý</div>
+        </li>
+        <li class="table-row">
+            <div class="table-cell">
+                <input type="checkbox" class="table-cell1">
+            </div>
+            <div class="table-cell"></div>
+            <div class="table-cell bold-text">
+                Test cuối module - HTML, CSS (Th Dũng)
+            </div>
+            <div class="table-cell">Bài kiểm tra(Online)</div>
+            <div class="table-cell">05/08/2024 19:16</div>
+            <div class="table-cell boder-solid">
+                <i class="fa-solid fa-trash-can"></i>
+                <i class="fa-solid fa-pen"></i>
+            </div>
+        </li>
+        <li class="table-row">
+            <div class="table-cell">
+                <input type="checkbox" class="table-cell1">
+            </div>
+            <div class="table-cell">Techstack2407</div>
+            <div class="table-cell bold-text">Test cuối module 1 - Thực hành</div>
+            <div class="table-cell">Bài tập về nhà</div>
+            <div class="table-cell">05/08/2024 20:24</div>
+            <div class="table-cell boder-solid">
+                <i class="fa-solid fa-trash-can"></i>
+                <i class="fa-solid fa-pen"></i>
+            </div>
+        </li>
+        <!-- Thêm các hàng dữ liệu khác ở đây -->
+    </ul>
+</body>
+</html>

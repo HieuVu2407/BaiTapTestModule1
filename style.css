@@ -1,0 +1,283 @@
+.menu__header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header__right {
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+}
+
+.header__right{
+    display: flex;
+    justify-content: space-between;
+    min-width: 630px;
+    
+}
+
+.date-container {
+    position: relative;
+    display: flex;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    height: 16px;
+    justify-content: space-between;
+}
+.date-container label {
+    position: absolute;
+    top: -10px; /* Điều chỉnh vị trí của label */
+    left: 10px; /* Điều chỉnh vị trí của label */
+    background-color: white;
+    padding: 0 5px;
+    font-size: 12px;
+}
+.date-container input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    width: 120px;
+    
+}
+.calendar-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('calendar-icon.png') no-repeat center center;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.btn{
+    border: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.header__left{
+    display: flex;
+    justify-content: space-between;
+    min-width: 240px;
+}
+
+.btn__lesson{
+    height: 30px;
+    margin-left: 8px;
+    width: 100px;
+    background-color: rgb(36, 162, 247);
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn__deliver{
+    margin-right: 8px;
+    height: 40px;
+    color: dodgerblue;
+    height: 40px;
+    width: 130px;
+}
+
+.btn__create{
+    width: 150px;
+    color: dodgerblue;
+    height: 40px;
+}
+
+.btn__delete{
+    width: 130px;
+    height: 40px;
+}
+
+.input__date{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn__board{
+    height: 30px;
+    width: 130px;
+    color: crimson;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 14px;
+    border-color: crimson;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+}
+.table-header, .table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Đường viền dưới */
+}
+.table-row .table-cell {
+    border-top: 1px solid #ddd; /* Đường viền trên cho các hàng */
+}
+.table-row:hover .table-cell {
+    background-color: #f1f1f1;
+}
+.table-row:last-child .table-cell {
+    border-bottom: 1px solid #ddd; /* Đảm bảo hàng cuối cùng có đường viền dưới */
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.bold-text{
+    color: deepskyblue;
+}
+
+.fa-solid.fa-pen{
+ margin-left: 12px;
+ color :gray
+}
+
+.fa-solid.fa-trash-can{
+ color :gray
+
+}
+
+.boder-solid{
+    max-width: 20px;
+    border-left: 1px solid #ddd;
+    box-shadow: -3px 3px 3px #ddd;
+}
+
+/* CSS cho các thiết bị nhỏ (điện thoại di động) */
+@media (max-width: 600px) {
+    .menu__header {
+        flex-direction: column;
+    }
+
+    .header__left, .header__right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__left {
+        margin-bottom: 20px;
+    }
+
+    .header__right {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .date-container {
+        width: 100%;
+    }
+
+    .table-cell {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .table-row {
+        display: block;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .table-cell input[type="checkbox"] {
+        margin-right: 10px;
+    }
+
+    .boder-solid {
+        border-left: none;
+        box-shadow: none;
+    }
+}
+
+/* CSS cho các thiết bị trung bình (máy tính bảng) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header__right {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .date-container {
+        width: auto;
+    }
+
+    .table {
+        display: table;
+    }
+
+    .table-row, .table-header {
+        display: table-row;
+    }
+
+    .table-cell {
+        display: table-cell;
+        padding: 16px;
+    }
+}
+
+/* CSS cho các thiết bị lớn (máy tính xách tay và máy tính để bàn) */
+@media (min-width: 1025px) {
+    .menu__header {
+        flex-direction: row;
+    }
+
+    .header__left, .header__right {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header__right {
+        width: auto;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    .date-container {
+        width: auto;
+    }
+
+    .table {
+        display: table;
+    }
+
+    .table-row, .table-header {
+        display: table-row;
+    }
+
+    .table-cell {
+        display: table-cell;
+        padding: 16px;
+    }
+}
